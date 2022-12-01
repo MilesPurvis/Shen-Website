@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Inter:wght@300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+* i {
+  font-size: larger;
+}
+body {
+  margin: 0 auto;
+  line-height: 1.3;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fcfcfc;
+  transition-duration: 0.5s;
+}
+
+a:hover {
+  color: #edb852;
+}
+
+hr {
+  opacity: 20%;
+  margin-bottom: 30px;
+}
+
+.main-header {
+  height: 12em;
+  padding: 2em;
+  max-width: 1200px;
+  margin: 20px auto;
+  background-image: url(../images/Shen_Image.webp);
+  border-radius: 20px;
+  box-shadow: rgba(52, 38, 126, 0.4) 0 48px 100px 0;
+  background-position: 55% 4%;
+  color: whitesmoke;
+}
+h1 {
+  font-size: 30pt;
+}
+.main-header h2 {
+  color: #edb852;
+  font-size: medium;
+  margin: 0.5rem 0;
+}
+
+.main-nav {
+  align-items: center;
+  background-color: #8267c76e;
+}
+
+.main-nav ul {
+  display: flex;
+  text-align: center;
+
+  padding: 5px 20em;
+  justify-content: space-around;
+  gap: 2em;
+}
+
+/* .drop-down li {
+  display: none;
+} */
+
+footer {
+  font-size: large;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
+  padding: 2em;
+  background-color: #8367c7;
+  color: #ffcf75;
+}
+p {
+  color: #fcfcfc;
+}
+
+img,
+video {
+  border: 1px solid #edb852;
+  border-radius: 15px;
+}

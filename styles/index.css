@@ -1,0 +1,91 @@
+:root {
+  --accent-color: #edb852;
+  --shadow: rgba(52, 38, 126, 0.4) 0 48px 100px 0;
+}
+
+.container {
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  color: #fcfcfc;
+  margin: 50px auto;
+  padding: 20px;
+  gap: 35px;
+  justify-content: center;
+}
+
+.area {
+  box-shadow: var(--shadow);
+  background-color: #8367c7;
+
+  border-radius: 10px;
+  padding: 30px;
+  margin-bottom: 10px;
+  max-width: 700px;
+}
+
+.info-area {
+  text-align: center;
+}
+
+.info-area h2 {
+  margin: 0.7em 0;
+}
+
+.info-area img {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.thumb-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1em;
+}
+
+.aside-area div {
+  margin-bottom: 10px;
+}
+
+q {
+  color: var(--accent-color);
+  padding: 0.2em;
+}
+
+section {
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: var(--shadow);
+}
+.aside-area {
+  text-align: center;
+}
+
+.aside-area li:before {
+  display: inline-block;
+  content: "";
+  height: 25px;
+  width: 25px;
+  background-image: url("../images/Twilight_Assault.webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  border: 1px solid var(--accent-color);
+  margin-top: 8px;
+}
+
+.main-area {
+  grid-row: 1;
+  grid-column: 2/4;
+}
+
+.main-area h4 {
+  color: var(--accent-color);
+  margin-bottom: 10px;
+}
+
+p {
+  opacity: 90%;
+  margin-bottom: 10px;
+}
