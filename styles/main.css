@@ -46,7 +46,7 @@ hr {
   border-radius: 30px;
   box-shadow: rgba(52, 38, 126, 0.4) 0 48px 100px 0;
   background-position: 55% 4%;
-  color: whitesmoke;
+  color: #fcfcfc;
   opacity: 98%;
   transition: 0.8s;
 }
@@ -70,6 +70,7 @@ h1 {
   align-items: center;
   margin-top: 0px;
   background-color: #8267c76e;
+  border-radius: 10px;
   display: flex;
   gap: 2em;
   text-align: center;
