@@ -12,7 +12,7 @@
   padding: 20px;
   gap: 35px;
   justify-content: center;
-  transition: 1s;
+  transition: 1.8s;
 }
 
 .area {
@@ -79,6 +79,7 @@ section {
 .main-area {
   grid-row: 1;
   grid-column: 2/4;
+  z-index: -1;
 }
 
 .main-area h4 {

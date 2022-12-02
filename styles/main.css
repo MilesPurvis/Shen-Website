@@ -60,6 +60,11 @@ h1 {
   font-size: medium;
   margin: 0.5rem 0;
 }
+.main-header h3 {
+  /* font-weight: 100; */
+  font-size: medium;
+  margin: 0.2rem 0;
+}
 
 .main-nav {
   align-items: center;
@@ -73,6 +78,12 @@ h1 {
   transition: 0.8s;
 }
 
+.main-nav h3:hover {
+  color: var(--accent-color);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
 .drop-header:hover .drop-menu {
   display: block;
 }
@@ -80,7 +91,7 @@ h1 {
 .drop-menu {
   display: none;
   position: absolute;
-  opacity: 90%;
+  opacity: 95%;
   background-color: #fcfcfc;
   min-width: 160px;
   box-shadow: var(--shadow);
@@ -88,17 +99,21 @@ h1 {
   text-align: left;
   transition: 1s;
   padding: 10px;
+  border-radius: 8px;
 }
 
 .drop-menu a {
-  visibility: visible;
   display: block;
   color: #8367c7;
+  padding: 5px;
+  transition: 1s;
 }
 
 .drop-menu a:hover {
   background-color: #8267c7;
+  border-radius: 5px;
   color: var(--accent-color);
+  transition: 1s;
 }
 
 footer {
