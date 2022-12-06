@@ -12,7 +12,6 @@
   padding: 20px;
   gap: 35px;
   justify-content: center;
-  transition: 1.8s;
 }
 
 .area {
@@ -27,6 +26,7 @@
 
 .info-area {
   text-align: center;
+  border: 2px solid var(--accent-color);
 }
 
 .info-area h2 {
@@ -36,6 +36,12 @@
 .info-area img {
   width: 50px;
   border-radius: 50%;
+  transition: 0.3s;
+}
+
+.info-area img:hover {
+  transition-timing-function: ease-in-out;
+  box-shadow: 0px 0px 1px 1px var(--accent-color);
 }
 
 .thumb-nav {
@@ -61,6 +67,7 @@ section {
 }
 .aside-area {
   text-align: center;
+  z-index: -1;
 }
 
 .aside-area li:before {
