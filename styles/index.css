@@ -27,6 +27,7 @@
 .info-area {
   text-align: center;
   border: 2px solid var(--accent-color);
+  grid-column: 1;
 }
 
 .info-area h2 {
@@ -68,6 +69,7 @@ section {
 .aside-area {
   text-align: center;
   z-index: -1;
+  grid-column: 4;
 }
 
 .aside-area li:before {

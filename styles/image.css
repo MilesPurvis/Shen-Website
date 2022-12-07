@@ -1,24 +1,50 @@
 :root {
   --shadow: rgba(52, 38, 126, 0.4) 0 48px 100px 0;
+  --accent-color: #edb852;
+}
+
+.container {
+  max-width: 1200px;
+  color: #fcfcfc;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin: 50px auto;
+  justify-content: center;
+  gap: 35px;
 }
 
 .img-container {
-  width: 992px;
+  grid-column: 2/5;
+  grid-row: 1/3;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   color: #fcfcfc;
-  margin: 50px auto;
+  margin: 0px auto;
   gap: 1em;
+  margin-bottom: 5em;
 }
 
-.img-container img {
+.title {
+  grid-row: 1;
+  grid-column: 1/3;
+  text-align: center;
+  background-color: #8267c79a;
+  border-radius: 15px;
+  padding: 1em;
+}
+
+.card img {
   border: 2px solid #fcfcfc9f;
   transition-duration: 0.3s;
+  max-width: 300px;
+  z-index: -1;
 }
 
 .card:hover.card img {
   transition-timing-function: ease-in-out;
+  border: 2px solid var(--accent-color);
   filter: brightness(45%);
+  box-shadow: var(--shadow);
   /* filter: blur(3px); */
 }
 .card:hover.card h5 {
@@ -28,7 +54,7 @@
 
 .card h5 {
   visibility: hidden;
-  z-index: 2;
+  z-index: -1;
   width: 80%;
   color: rgb(237, 184, 82, 0.8);
   position: absolute;
@@ -37,13 +63,90 @@
   transform: translate(-50%, -50%);
   padding: 20px;
   text-align: center;
-  font-size: 30pt;
-  transition-duration: 0.2s;
+  font-size: 20pt;
+  transition-duration: 0.1s;
+  cursor: default;
 }
 
 .card {
+  display: flex;
+  justify-content: center;
   position: relative;
-  max-width: 300px;
+}
+
+.area {
+  box-shadow: var(--shadow);
+  background-color: #8367c7;
+  border-radius: 30px;
+  padding: 30px;
+  margin-bottom: 10px;
+  max-width: 700px;
+  opacity: 95%;
+}
+
+.info-area {
+  text-align: center;
+  border: 2px solid var(--accent-color);
+  position: fixed;
+  z-index: 2;
+  grid-row: 1/3;
+}
+
+.info-area h2 {
+  margin: 0.7em 0;
+}
+
+.info-area img {
+  width: 50px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.info-area img:hover {
+  transition-timing-function: ease-in-out;
+  box-shadow: 0px 0px 1px 1px var(--accent-color);
+}
+
+.thumb-nav {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  gap: 1em;
+}
+
+.aside-area {
+  grid-column: 5;
+}
+
+section {
+  padding: 10px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  box-shadow: var(--shadow);
+}
+
+.aside-area img {
+  width: 250px;
+  border-radius: 20px;
+}
+
+.aside-area li:before {
+  display: inline-block;
+  content: "";
+  height: 25px;
+  width: 25px;
+  background-image: url("../images/Twilight_Assault.webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  border: 1px solid var(--accent-color);
+}
+.aside-area li {
+  margin-bottom: 2em;
+}
+q {
+  color: var(--accent-color);
+  padding: 0.2em;
 }
