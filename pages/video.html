@@ -9,9 +9,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="../styles/table.css" />
+    <link rel="stylesheet" href="../styles/video.css" />
     <link rel="stylesheet" href="../styles/main.css" />
-    <link rel="icon" type="image/x-icon" href="../images/favicon.png" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../images/public_images/favicon.png"
+    />
 
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -19,7 +23,7 @@
     <title>Shen</title>
   </head>
   <body>
-    <header class="main-header">
+    <header id="header" class="main-header">
       <!-- Header same for each page -->
       <h1>Shen</h1>
       <div class="p-title">
@@ -43,15 +47,175 @@
         <div class="drop-header">
           <a href="./video.html"><h3>Abilities</h3></a>
           <div class="drop-menu">
-            <a href="#">Q</a>
-            <a href="#">W</a>
-            <a href="#">E</a>
-            <a href="#">R</a>
+            <a onclick="showVideo('Q')" href="#">Twilight Assult</a>
+            <a onclick="showVideo('W')" href="#">Spirit's Refuge</a>
+            <a onclick="showVideo('E')" href="#">Shadow Dash</a>
+            <a onclick="showVideo('R')" href="#">Stand United</a>
           </div>
         </div>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <div class="container">
+        <div class="area info-area">
+          <h2>Information</h2>
+          <hr />
+          <div class="thumb-nav">
+            <div>
+              <a href="../index.html"
+                ><img
+                  class="icon"
+                  src="../images/public_images/recall.webp"
+                  alt=""
+                />
+                <h4>Home</h4></a
+              >
+            </div>
+            <div>
+              <a href="./image.html"
+                ><img src="../images/public_images/Shen_icon_1.webp" alt="" />
+                <h4>Skins</h4></a
+              >
+            </div>
+            <div>
+              <a href="./video.html"
+                ><img src="../images/ability_images/Ki_Barrier.webp" alt="" />
+                <h4>Abilities</h4></a
+              >
+            </div>
+            <div>
+              <a href="./table.html">
+                <img src="../images/public_images/Shen_icon_2.jpg" alt="" />
+                <h4>Table</h4>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="video-container">
+          <div id="Q" class="video-card TA">
+            <video
+              autoplay
+              muted
+              loop
+              src="https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0098/ability_0098_Q1.mp4"
+            ></video>
+            <div>
+              <h5>Twilight Assult - Q</h5>
+
+              <p>
+                Shen recalls his spirit blade to attack with it, dealing damage
+                based on the target's max health. The attacks are greatly
+                empowered if it collides with an enemy champion, and all
+                collided enemies are slowed while running away from Shen.
+              </p>
+            </div>
+          </div>
+          <div id="W" class="video-card SR">
+            <video
+              autoplay
+              muted
+              loop
+              src="https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0098/ability_0098_W1.mp4"
+            ></video>
+            <div>
+              <h5>Spirit's Refuge - W</h5>
+
+              <p>
+                Attacks that would hit Shen or his allies near his spirit blade
+                are blocked.
+              </p>
+            </div>
+          </div>
+          <div id="E" class="video-card SD">
+            <video
+              autoplay
+              muted
+              loop
+              src="https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0098/ability_0098_E1.mp4"
+            ></video>
+            <div>
+              <h5>Shadow Dash - E</h5>
+
+              <p>
+                Shen dases in a direction, taunting his enemies in his path.
+              </p>
+            </div>
+          </div>
+          <div id="R" class="video-card SU">
+            <video
+              autoplay
+              muted
+              loop
+              src="https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0098/ability_0098_R1.mp4"
+            ></video>
+            <div>
+              <h5>Stand United - R</h5>
+
+              <p>
+                Shen shields target allied champion from incoming damage, and
+                soon after teleports to their location.
+              </p>
+            </div>
+          </div>
+          <div class="button-menu">
+            <h3>Click a button to show a Video</h3>
+            <div class="btn-container">
+              <div>
+                <button onclick="showVideo('Q')" class="buttonTA"></button>
+                <h6>Twilight Assult - Q</h6>
+              </div>
+              <div>
+                <button onclick="showVideo('W')" class="buttonSR"></button>
+                <h6>Spirit's Refuge - W</h6>
+              </div>
+
+              <div>
+                <button onclick="showVideo('E')" class="buttonSD"></button>
+                <h6>Shadow Dash - E</h6>
+              </div>
+
+              <div>
+                <button onclick="showVideo('R')" class="buttonSU"></button>
+                <h6>Stand United - R</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="area aside-area">
+          <section>
+            <h3>Links</h3>
+            <q>Target marked.</q>
+            <hr />
+            <ul>
+              <li>
+                <p>
+                  <a
+                    href="https://www.op.gg/champions/shen/top/build?region=global&tier=platinum_plus"
+                    >Shen Builds</a
+                  >
+                </p>
+              </li>
+              <li>
+                <p>
+                  <a
+                    href="https://www.leagueoflegends.com/en-us/champions/shen/"
+                    >Offical Shen Page</a
+                  >
+                </p>
+              </li>
+              <li>
+                <p>
+                  <a
+                    href="https://signup.leagueoflegends.com/en-us/signup/redownload"
+                    >Download The Game</a
+                  >
+                </p>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </main>
     <footer>
       <p>Created by Miles Purvis</p>
       <span>
@@ -66,4 +230,5 @@
       <p>&copy;League of Legends - 2022</p>
     </footer>
   </body>
+  <script src="../scipts/script.js"></script>
 </html>
