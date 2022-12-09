@@ -23,7 +23,6 @@
   border: 2px solid #fcfcfc9f;
   transition-duration: 0.3s;
   max-width: 90%;
-  z-index: -1;
 }
 
 .card:hover.card img {
@@ -39,7 +38,6 @@
 
 .card h5 {
   visibility: hidden;
-  z-index: -1;
   width: 80%;
   color: rgb(237, 184, 82, 0.8);
   position: absolute;

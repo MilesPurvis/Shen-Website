@@ -123,6 +123,7 @@ h1 {
 .drop-menu a:hover {
   background-color: #8267c7;
   color: var(--accent-color);
+  z-index: 2;
 }
 
 footer {
@@ -152,9 +153,10 @@ video {
   margin: 50px auto;
   justify-content: center;
   gap: 35px;
+  z-index: -1;
 }
 .area {
-  z-index: 0;
+  z-index: -1;
   box-shadow: var(--shadow);
   background-color: #8367c7;
   border-radius: 30px;

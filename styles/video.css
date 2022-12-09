@@ -1,7 +1,6 @@
 .button-menu {
   text-align: center;
   margin: 0.5em;
-  background-color: rgba(0, 0, 0, 0.445);
   padding: 2em;
   border-radius: 15px;
 }
@@ -17,6 +16,8 @@ button {
 button:hover {
   transition: 0.2s ease-in-out;
   border: 2px solid #edb852;
+  margin-top: 2em;
+  transition: margin-top 0.4s;
 }
 
 .video-container {
